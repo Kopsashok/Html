@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Clear Property</title>
+	<style type="text/css">
+		img{
+			float: left;
+			margin: 10px;
+			border: 3px solid red;
+			width: 100px;
+			height: 100px;
+		}
+		.without_clear{
+			border: 3px solid blue;
+		}
+		.with_clear{
+			border: 3px solid blue;
+			clear: left;/*should be the same value of float*/
+		}
+		.clear_fix{
+			border: 3px solid blue;
+			overflow: auto;
+		}
+	</style>
+</head>
+<body>
+	<h1>Without clear</h1>
+	<img src="img.jpg" alt="VC">
+	<div class="without_clear">
+		This is division without any clear property.
+	</div>
+
+	<br><br><br>
+
+	<h1>With clear</h1>
+	<img src="img.jpg" alt="VC">
+	<div class="with_clear">
+		This is division with clear property.
+	</div>
+
+	<br><br><br>
+	
+	<h1>clear fix</h1>
+	<div class="clear_fix">
+	<img src="img.jpg" alt="VC">
+		This is division with  clear fix.
+	</div>
+</body>
+</html>

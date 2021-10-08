@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Image Gallery</title>
+	<style>
+		.header{
+
+			width: 100%;
+			height: 200px;
+			background: black;
+			color: white;
+			text-align: center;
+			vertical-align: middle;
+			font-size: 40px;
+			padding:30px 0px 25px;
+
+		}
+
+		.Photo_gallery{
+			border: 3px solid red;
+			margin: 30px;
+			padding: 35px;
+		}
+		
+		.gallery{
+
+			margin: 30px;
+			padding: 50PX;
+			display: inline-block; /*or float:left*/
+			border: 3px solid black;
+			font-size: 50px;
+			text-align: center;
+
+		}
+
+		
+
+		img{
+
+			width: 300px;
+			height: 300px;
+			display: block;
+			margin: auto;
+		}
+
+		div.gallery:hover {
+		  border: 3px solid blue;
+		  font-weight: bold;
+		  color: red;
+		  box-shadow: 10px 10px 6px gray;
+		  cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+
+
+	<div class="header">
+		<h1>Image Gallery</h1>
+	</div>
+
+	<div class="Photo_gallery">	
+		<div class="gallery">
+			<a href="https://www.google.com/"><img src="google.png" alt="google"></a>
+			<div class="desc">Google</div>
+		</div>
+
+		<div class="gallery">
+			<a href="https://www.ask.com/"><img src="ask.png" alt="ask"></a>
+			<div class="desc">Ask</div>
+		</div>
+
+		<div class="gallery">
+			<a href="https://www.bing.com/"><img src="bing.png" alt="bing"></a>
+			<div class="desc">Bing</div>
+		</div>
+
+		<div class="gallery">
+			<a href="https://www.yahoo.com/"><img src="yahoo.jpg" alt="yahoo"></a>
+			<div class="desc">Yahoo</div>
+		</div>
+
+	</div>
+	
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>box_sizing</title>
+	<style type="text/css">
+		.initial{
+			width: 400px;
+			height: 150px;
+			border: 3px solid blue;
+		}
+		.padding{
+			width: 400px;
+			height: 150px;
+			border: 3px solid blue;
+			padding: 50px;
+		}
+		.borderbox{
+			width: 400px;
+			height: 150px;
+			border: 3px solid blue;
+			box-sizing: border-box;
+		}
+		.box-sizing_with_padding{
+			width: 400px;
+			height: 150px;
+			border: 3px solid blue;
+			box-sizing: border-box;
+			padding: 50px;
+		}
+	</style>
+</head>
+<body>
+	<div class="initial">Initial Box</div><br>
+	<div class="padding">with padding</div><br>
+	<div class="borderbox">Box-sizing : border-box</div><br>
+	<div class="box-sizing_with_padding">Box-sizing with_padding</div><br>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Website Layout</title>
+	<style type="text/css">
+	*{
+		box-sizing: border-box;
+	}
+		.header{
+			background-color: lightgrey;
+			font-size: 20px;
+			width: 100%;
+			height: 200px;
+			padding: 150px;
+			text-align: center;
+			vertical-align: middle;
+		}
+		/*Navigation*/
+		.nav{
+			background-color: black;
+			overflow: hidden;
+		}
+		.nav a{
+			color: white;
+			text-decoration: none;
+			padding: 15px;
+			display: block;
+			float: left;
+		}
+		.nav a:hover{
+			overflow: auto;
+			background-color: lightgrey;
+			font-size: 20px;
+			font-weight: bold;
+		}
+		.col{
+			width: 33.33%;
+			float: left;
+			padding: 15px;
+		}
+		.cont:after{
+			content:"";/*Insert content*/
+			display: table;/*It will arrange the table rows and columns*/
+			clear: both;
+		}
+		.footer{
+			background-color: black;
+			color: white;
+			width: 100%;
+			height: 100px;
+			text-align: center;
+			vertical-align: middle;
+			padding: 20px;
+		}
+	</style>
+</head>
+<body>
+	<div class="header"><h1>Welcome</h1></div>
+
+	<div class="nav">
+		<a href="#">Home</a>
+		<a href="#">About Us</a>
+		<a href="#">Contact</a>
+	</div>
+
+	<!--content with equal columns-->
+	<div class="cont">
+		<div class="col">
+			<h2>Column left</h2>
+		</div>
+		<div class="col">
+			<h2>Column middle</h2>
+		</div>
+		<div class="col">
+			<h2>Column right</h2>
+		</div>
+	</div>
+	<div class="footer">
+		<p>copyright &copy all rights reserved</p>
+	</div>
+</body>
+</html>

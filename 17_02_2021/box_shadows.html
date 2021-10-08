@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>box_shadows</title>
+	<style type="text/css">
+		.initial{
+			background-color: lightgreen;
+			border: 3px solid green;
+			height: 50px;
+			width: 80%;
+		}
+		.offset{
+			background-color: lightgreen;
+			border: 3px solid green;
+			height: 50px;
+			width: 80%;
+			box-shadow: 10px 15px grey;/*h-offset v-offset color*/
+		}
+		.blur{
+			background-color: lightgreen;
+			border: 3px solid green;
+			height: 50px;
+			width: 80%;
+			box-shadow: 10px 15px 5px grey;/*h-offset v-offset blur color*/
+
+		}
+		.spread{
+			background-color: lightgreen;
+			border: 3px solid green;
+			height: 50px;
+			width: 80%;
+			box-shadow: 10px 15px 5px 10px grey;/*h-offset v-offset blur spread color*/
+		}
+		.inset{
+			background-color: lightgreen;
+			border: 3px solid green;
+			height: 50px;
+			width: 80%;
+			box-shadow: 10px 15px 5px 10px grey inset;/*h-offset v-offset blur spread color*/
+		}
+		.ini{
+			background-color: lightgreen;
+			border: 3px solid green;
+			height: 50px;
+			width: 80%;
+			box-shadow: 10px 15px 5px 10px grey initial;/*h-offset v-offset blur spread color*/
+		}
+		.inherit{
+			background-color: lightgreen;
+			border: 3px solid green;
+			height: 50px;
+			width: 80%;
+			box-shadow: 10px 15px 5px 10px grey inherit;/*h-offset v-offset blur spread color*/
+		}
+	</style>
+</head>
+<body>
+	<div class="initial">box-shadows: none| h-offset v-offset blur spread color inset|initial|inherit</div>
+	<br><br>
+	<div class="offset">box-shadows: h-offset + v-offset</div>
+	<br><br>
+	<div class="blur">box-shadows: h-offset + v-offset + blur</div>
+	<br><br>
+	<div class="spread">box-shadows: h-offset + v-offset + blur +spread radius</div>
+	<br><br>
+	<div class="inset">box-shadows: h-offset + v-offset + blur + spread radius + inset</div>
+	<br><br>
+	<div class="ini">box-shadows: h-offset + v-offset + blur + spread radius + initial</div>
+	<br><br>
+	<div class="inherit">box-shadows: h-offset + v-offset + blur + spread radius + inherit</div>
+</body>
+</html>

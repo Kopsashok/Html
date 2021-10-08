@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>dropdown_menu</title>
+	<style type="text/css">
+		.drop-btn{
+			background-color: black;
+			color: white;
+			padding: 10px;
+			font-size: 20px;
+			border: none;
+		}
+		.drop-cont{
+			display: none;
+			position: absolute;
+			background-color: grey;
+			min-width: 100px;
+			z-index: -1;
+		}
+		.dropdown{
+			position: relative;
+			display: inline-block;
+		}
+		.dropdown:hover .drop-cont{
+			display: block;
+		}
+		.drop-cont a{
+			text-decoration: none;
+			padding: 10px 16px;
+			color: black;
+			display: block;
+		}
+		.drop-cont a:hover{
+			background-color: lightblue;
+		}
+		.dropdown:hover .drop-btn{
+			background-color: blue;
+		}
+	</style>
+</head>
+<body>
+	<h1>dropdown_menu</h1>
+	<div class="dropdown">
+		<button class="drop-btn">Search Engines</button><br>
+		<div class="drop-cont">
+			<a href="http://www.google.com">Google</a><br>
+			<a href="http://www.google.com">Yahoo</a><br>
+			<a href="http://www.google.com">Ask</a>
+		</div>
+	</div>
+</body>
+</html>

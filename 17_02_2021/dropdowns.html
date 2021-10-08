@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Drop downs</title>
+	<style type="text/css">
+		.dropdown{
+			position: relative;
+			display: inline-block;
+			background-color: yellow;
+		}
+		.drop-cont{
+			display: none;
+			position: absolute;
+			background-color: green;
+			min-width: 100px;
+			box-shadow: 5px 5px 3px grey;
+			color: red;
+			padding: 10px 16px;
+			z-index: -1;
+		}
+		.dropdown:hover .drop-cont{
+			display: block;
+		}
+	</style>
+</head>
+<body>
+	<h1>This is hovering drop down</h1>
+	<div class="dropdown">
+		please hover your mouse on me
+		<div class="drop-cont">
+			Hello World!
+		</div>
+	</div>
+</body>
+</html>

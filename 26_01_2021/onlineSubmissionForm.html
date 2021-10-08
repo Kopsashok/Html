@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ex1</title>
+</head>
+<body style="background-color: #57a3f7">
+<h2 style= "color:blue; text-align: center;">Online Exam Submission Form</h2>
+<form>
+		<fieldset>
+			<legend>Personal Details</legend>
+			<table cellspacing="3" cellpadding="3">
+				<tr>
+					<td>FullName</td>
+					<td>Comments</td>
+				</tr>
+				<tr>
+					<td><input type="text" name="fname" placeholder="Type your full name"></td>
+					<td rowspan="9"><textarea placeholder ="Type your message here" rows="20" cols="30"></textarea></td>
+				</tr>
+				<tr>
+					<td>Registration No</td>
+				</tr>
+				<tr>
+					<td><input type="text" name="regNo" placeholder="Type your regNo"></td>
+				</tr>
+				<tr>
+					<td>Email</td>
+				</tr>
+				<tr>
+					<td><input type="email" name="email" placeholder="Type your email"></td>
+				</tr>
+				<tr>
+					<td>Telephone No</td>
+				</tr>
+				<tr>
+					<td><input type="tel" name="telNo" placeholder="Type your contact No"></td>
+				</tr>
+				<tr>
+					<td>Date of Birth</td>
+				</tr>
+				<tr>
+					<td><input type="date" name="DOB"></td>
+				</tr>
+			</table>
+		</fieldset>
+
+		<fieldset>
+			<legend>Exam Details</legend>
+			<table cellpadding="5" cellspacing="5" width="50%">
+				<tr>
+					<td rowspan ="4" valign="top"><label>Year:</label></td>
+					<td><input type="radio" name="year" value="1st">First Year</td>
+				</tr>
+				<tr>
+					<td><input type="radio" name="year" value="2nd">Second Year</td>
+				</tr>
+				<tr>
+					<td><input type="radio" name="year" value="3rd">Third Year</td>
+				</tr>
+				<tr>
+					<td><input type="radio" name="year" value="4th">Fourth Year</td>
+				</tr>
+				<tr>
+					<td rowspan="3" valign="top">Subjects:</td>
+					<td><input type="checkbox" name="html">HTML</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="ProLog">ProLog</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="OS">Operating System</td>
+				</tr>
+				<tr>
+					<td rowspan="2" valign="top">Attachments:</td>
+					<td rowspan="2"></td>
+					<td><input type="file"></td>
+				</tr>
+				<tr>
+					<td><button>Upload</button></td>
+				</tr>
+			</table>
+		</fieldset>
+</form>
+</body>
+</html>
