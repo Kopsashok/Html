@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Types of Input</title>
+</head>
+<body>
+	<form>
+		<fieldset>
+			<legend style="color: blue; font-size: 30px;">Input Types</legend>
+			<br>
+			<label>I/p- Text</label>
+			<input type="text" name="name">
+
+			<br><br>
+			<label>I/p- disable</label>
+			<input type="text" name="name" disabled>
+
+			<br><br>
+			<label>PlaceHolder</label>
+			<input type="text" name="name" placeholder="Type Here">
+
+			<br><br>
+			<label>I/p- Size and Max Length</label>
+			<input type="text" name="name" placeholder="Type Here" size="20" maxlength="10">
+
+			<br><br>
+			<label>ReadOnly</label>
+			<input type="text" name="name" placeholder="Type Here" readonly>
+
+			<br><br>
+			<label>Email</label>
+			<input type="email" name="email" placeholder="Type Here" readonly>
+
+			<br><br>
+			<label>Password</label>
+			<input type="Password" name="pw" placeholder="Type Here">
+
+			<br><br>
+			<label>I/p- Number</label>
+			<input type="number" name="no" placeholder="Type Here">
+
+			<br><br>
+			<label>Pick a color</label>
+			<input type="color">
+
+			<br><br>
+			<label>Pick a date</label>
+			<input type="date" max="2050-12-31" min="1950-01-01">
+
+			<br><br>
+			<label>time</label>
+			<input type="time">
+
+			<br><br>
+			<label>Date and Time</label>
+			<input type="datetime-local">
+
+			<br><br>
+			<label>week</label>
+			<input type="week">
+
+			<br><br>
+			<label>Telephone Number</label>
+			<input type="tel">
+
+			<br><br>
+			<label>Range</label>
+			<input type="range" max="10" min="0">
+
+			<br><br>
+			<label>File</label>
+			<input type="file">
+
+			<br><br>
+			<label>search</label>
+			<input type="search">
+
+			<br><br>
+			<label>search</label>
+			<input type="url">
+
+			<br><br>
+			<label>Select subjects you prefer</label><br>
+			<label>OS</label><input type="checkbox"><br>
+			<label>OOP</label><input type="checkbox"><br>
+			<label>Web Development</label><input type="checkbox">
+
+			<br><br>
+			<label>Multiple choices</label>
+			<select multiple>
+				<option>1</option>
+				<option>2</option>
+				<option>3</option>
+				<option>4</option>
+			</select>
+
+			<br><br>
+			<label>Gender- Radio</label><br>
+			<label>Male</label><input type="radio" name="gender" value="male"><br>
+			<label>Female</label><input type="radio" name="gender" value="female"><br>
+
+			<br><br>
+			<label>Gender- Radio</label><br>
+			<label>Male</label><input type="radio" name="genders" value="male" checked><br>
+			<label>Female</label><input type="radio" name="genders" value="female"><br>
+
+			<br><br>
+			<label>option-groups</label><br>
+			<select>
+				<optgroup label="vegetables">
+					<option value="carrot">carrot</option>
+					<option value="Pumkin">Pumkin</option>
+					<option value="leeks">leeks</option>
+				</optgroup>
+				<optgroup label="Non-Veg">
+					<option value="chicken">chicken</option>
+					<option value="fish">Fish</option>
+					<option value="prawn">Prawn</option>
+				</optgroup>
+			</select>
+
+			<br><br>
+			<label>Image-button</label><br>
+			<input type="image" src="button.jpg" alt="button" width="50" height="50"><br>
+
+			<br><br>
+			<label>Submit-button</label><br>
+			<input type="submit" name="submit">
+			<input type="reset" name="reset">
+		</fieldset>
+	</form>
+</body>
+</html>

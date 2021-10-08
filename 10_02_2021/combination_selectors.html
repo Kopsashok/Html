@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>combination_selectors</title>
+	<style type="text/css">
+		.descendent p{
+			background-color: yellow;
+		}
+
+		.child > p{
+			background-color: magenta;
+		}
+		.adjacent + p{
+			background-color: skyblue;
+		}
+		.general ~ p{
+			background-color: lightgreen;
+		}
+	</style>
+</head>
+<body>
+	<h1>combinator selectors</h1>
+	<h2>Descendent Selector - (space)</h2>
+	<div class="descendent">
+		<p>Para 1 with div</p>
+		<p>Para 2 with div</p>
+		<span><p>Para 3 with div</p></span>
+		<p>Para 4 with div</p>
+	</div>
+
+	<p>Para 5 without div</p>
+	<p>Para 6 without div</p>
+
+	<h2>Child Selector - (>)</h2>
+	<div class="child">
+		<p>Para 1 with div</p>
+		<p>Para 2 with div</p>
+		<span><p>Para 3 with div</p></span>
+		<p>Para 4 with div</p>
+	</div>
+
+	<p>Para 5 without div</p>
+	<p>Para 6 without div</p>
+
+	<h2>Adjacent sibiling Selector - (+)</h2>
+	<!--It will select most closest one-->
+	<div class="adjacent">
+		<p>Para 1 with div</p>
+		<p>Para 2 with div</p>
+		<span><p>Para 3 with div</p></span>
+		<p>Para 4 with div</p>
+	</div>
+
+	<p>Para 5 without div</p>
+	<span><p>Para 6 without div</p></span>
+	<p>Para 7 without div</p>
+	
+	<h2>General sibiling Selector - (~)</h2>
+	<div class="general">
+		<p>Para 1 with div</p>
+		<p>Para 2 with div</p>
+		<span><p>Para 3 with div</p></span>
+		<p>Para 4 with div</p>
+	</div>
+
+	<p>Para 5 without div</p>
+	<span><p>Para 6 without div</p></span>
+	<p>Para 7 without div</p>
+
+</body>
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Central Province</title>
+	<link rel="stylesheet" type="text/css" href=" https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap">
+	<style type="text/css">
+		.header img{
+			width: 50px;
+			height: 50px;
+			float: left;
+		}
+		.header h1{
+			text-shadow: 3px 3px lightgray;
+			color: green;
+			font-family: 'Dancing Script', cursive;
+		}
+		.nav1{
+			background-color: #039c1f;
+			padding-top: 10px;
+			padding-bottom: 10px;
+		}
+		.nav1 a{
+			text-decoration: none;
+			font-size: 16px;
+			color: white;
+			padding: 10px;
+		}
+		.nav1 a:hover{
+			background-color: lightgray;
+			font-size: 20px;
+			color: black;
+		}
+		.h1{
+			color: #014513;
+			font-size: 16px;
+		}
+		hr{
+			height: 3px;
+			border: 2px double green;
+			border-radius: 8px;
+		}
+		.cont{
+			float: left;
+			background-color: white;
+			column-count: 2;
+			overflow: auto;
+			column-width: 50%;
+		}
+		.gallery{
+			padding: 10px;
+			border: 1px solid black;
+			float: left;
+			margin-right: 40px;
+			margin-bottom: 40px;
+		}
+		.gallery p{
+			display: none;
+		}
+		.gallery img{
+			width: 150px;
+			height: 100px;
+		}
+		.gallery:hover{
+			box-shadow: 3px 3px gray;
+			padding-top: 7px;
+			padding-bottom: 5px;
+		}
+		.gallery:hover img{
+			width: 150px;
+			height: 122px;
+		}
+		.gallery:hover p{
+			display: block;
+		}
+		ol{
+			list-style-type: 1;
+		}
+		.para::first-letter{
+			font-size: 30px;
+		}
+		.para::first-line{
+			font-weight: bold;
+			font-variant: small-caps;
+		}
+		legend{
+			color: #014513;
+			font-size: 20px;
+		}
+		.feed{
+			text-align: left;
+		}
+		.sub{
+			background-color: #039c1f;
+			color: white;
+			border-radius: 5px;
+			width: 100%;
+		}
+		.footer{
+			background-color: #039c1f;
+			color: white; 
+			text-align: center;
+		}
+		table{
+			padding: 20px;
+			font-size: 12px;
+		}
+		.r1{
+			font-weight: bold;
+			font-size: 16px;
+		}
+		.footer p{
+			vertical-align: middle;
+		}
+	</style>
+</head>
+<body>
+	<div class="header">
+		<img src="Website Resources/images/logo/logo.jpg" alt="logo">
+		<h1>Travel SriLanka</h1>
+	</div>
+	<nav class="nav1">
+		<a href="Answer.html">Home</a>
+		<a href="#">About Us</a>
+		<a href="destination.html">Destination</a>
+		<a href="#">Contacts</a>
+		<a href="feedback.html">Feedback</a>
+	</nav>
+	<div>
+		<fieldset>
+			<legend>Feedback</legend>
+			<table class="feed" cellspacing="10px" cellpadding="10px">
+				<tr>
+					<th><label>Name</label></th>
+					<th><input type="text" name="name" placeholder="Type name here"></th>
+				</tr>
+				<tr>
+					<th><label>Gender</label></th>
+					<th><input type="radio" name="gender">Female <input type="radio" name="gender">male</th>
+				</tr>
+				<tr>
+					<th><label>Email</label></th>
+					<th><input type="mail" name="mail" placeholder="Type your mail here"></th>
+				</tr>
+				<tr>
+					<th><label>Contact Number</label></th>
+					<th><input type="text" name="no" placeholder="Type your contact Number"></th>
+				</tr>
+				<tr>
+					<th><label>country</label></th>
+					<th>
+						<select>
+							<option>SriLanka</option>
+							<option>India</option>
+						</select>
+					</th>
+				</tr>
+				<tr>
+					<th><label>Message</label></th>
+					<th><textarea name="msg" cols="22" rows="10"></textarea></th>
+				</tr>
+				<tr>
+					<th></th>
+					<th><button class="sub">Submit</button></th>
+				</tr>
+			</table>
+		</fieldset>
+	</div>
+	<div class="footer">
+		<center>
+			<table cellpadding="10px" cellspacing="5px;">
+				<tr class="r1">
+					<td>Address</td>
+					<td>Contacts</td>
+				</tr>
+				<tr>
+					<td>No 15,</td>
+					<td>0725589452</td>
+				</tr>
+				<tr>
+					<td>Kandy Road,</td>
+					<td>0345896432</td>
+				</tr>
+				<tr>
+					<td>Kiribathgoda</td>
+					<td>travelsrilanka@gmail.com</td>
+				</tr>
+			</table>
+		</center>
+		<hr style="height: 1px; background-color: lightgray">
+		<div>
+			<p>&copy travelSriLanka 2020</p>
+		</div>
+	</div>
+</body>
+</html>

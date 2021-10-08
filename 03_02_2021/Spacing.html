@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>spacing</title>
+	<style type="text/css">
+		div.border{
+			border: 3px solid blue;
+			width: 200px;
+			height: 200px;
+		}
+		div.margin{
+			/*margins are used to create space around elements, outside of any define boreders
+			margin-top
+			margin-left
+			margin-right
+			margin-bottom
+			*/
+
+			/*margin-bottom: 140px;
+			margin-top: 140px;
+			margin-left: 100px;
+			margin-right: 100px;*/
+			
+			border: 3px solid blue;
+			margin: 100px;
+			width: 200px;
+			height: 200px;
+		}
+		div.padding{
+			border: 3px solid blue;
+			margin: 100px;
+			width: 200px;
+			height: 200px;
+			/*Used to create space around the elements inside of any defined border*/
+
+			/*padding-top: 140px;
+			padding-right: 100px;
+			padding-bottom: 140px;
+			padding-left: 100px;*/
+
+			/*padding using 4 values
+			padding:100px 150px*200px*50px;
+
+			padding using 3 values
+			padding:100px 150px*50px (top*(right,left)*bottom);
+
+			padding using 2 values
+			padding:100px 150px ((top*bottom)*(right,left));*/
+			padding: 100px;
+		}
+		div.outline{
+			border: 3px solid blue;
+			margin: 100px;
+			width: 200px;
+			height: 200px;
+			padding: 100px;
+			background-color: lightblue;
+
+			outline-style: solid;
+			outline-width: 10px;
+			outline-color: magenta;
+		}
+		div.outlineOffset{
+			border: 3px solid blue;
+			margin: 100px;
+			width: 200px;
+			height: 200px;
+			padding: 100px;
+			background-color: lightblue;
+
+			outline-style: solid;
+			outline-width: 10px;
+			outline-color: magenta;
+			outline-offset:3px; /*Space between the outline and the edge of an element*/
+		}
+
+	</style>
+</head>
+<body>
+	<div class="border">With Border</div><br>
+	<div class="margin">With border and margin</div><br>
+	<div class="padding">With border and margin and padding</div><br>
+	<div class="outline">With border and margin and outline</div><br>
+	<div class="outlineOffset">With border and margin and outline and outline offset</div>
+</body>
+</html>

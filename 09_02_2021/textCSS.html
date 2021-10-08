@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>text in CSS</title>
+	<style type="text/css">
+		div{
+			border: 3px solid blue;
+		}
+		h2{
+			color: magenta;
+		}
+
+		#left{
+			text-align: left;
+		}
+		#right{
+			text-align: right;
+		}
+		#center{
+			text-align: center;
+		}
+		#justify{
+			text-align: justify;
+		}
+		.top{
+			vertical-align: top;
+		}
+		.bottom{
+			vertical-align: bottom;
+		}
+		.middle{
+			vertical-align: middle;
+		}
+		.dirrection{
+			direction: rtl;
+			unicode-bidi: bidi-override;
+		}
+		#underline{
+			text-decoration: underline;
+		}
+		#overline{
+			text-decoration: overline;
+		}
+		#line-through{
+			text-decoration: line-through;
+		}
+		.capitalize{
+			text-transform: capitalize;
+		}
+		.uppercase{
+			text-transform: uppercase;
+		}
+		.lowercase{
+			text-transform: lowercase;
+		}
+		.shadow{
+			text-shadow: 3px 3px blue;
+		}
+		.spacing{
+			text-indent: 50px;
+			letter-spacing:4px;
+			line-height: 1.9;
+			word-spacing: 10px;
+		}
+
+	</style>
+</head>
+<body>
+	<div>
+		<h1>Text color</h1>
+		<h2 id="text_color">We can change the text color</h2>
+	</div><br>
+
+	<div>
+		<h1>Text alignments - horizontal</h1>
+		<h2 id="left">text alignment - left</h2>
+		<h2 id="right">text alignment - right</h2>
+		<h2 id="center">text alignment - center</h2>
+	</div><br>
+
+	<div>
+		<p id="justify">
+			We take great pleasure in welcoming you to the Vavuniya Campus of the University of Jaffna!
+
+			Situated in the land that was once part of the kingdom of the legendary Vanni Kings, the Vavuniya Campus is a higher seat of learning and research in this region, which provides higher education in the fields of Applied Science , Business Management and Technological Studies
+
+			As a service provider in the higher education sector we are customer focused – where producing totally satisfied customers is the prime aim of all our endeavours.
+		</p>
+	</div>
+
+	<br>
+	<div>
+		<h1>Text alignments - vertical</h1>
+		<h2>This is <img class="default" src="p1.jpg" alt="picture" width="100px" height="100px"> an image with default vertical alignment.</h2>
+		<h2 >This is <img class="top" src="p1.jpg" alt="picture" width="100px" height="100px"> an image with top vertical alignment.</h2>
+		<h2>This is <img class="bottom" src="p1.jpg" alt="picture" width="100px" height="100px"> an image with bottom vertical alignment.</h2>
+		<h2 >This is <img class="middle" src="p1.jpg" alt="picture" width="100px" height="100px"> an image with middle vertical alignment.</h2>
+	</div><br>
+
+	<div>
+		<h1>Text direction</h1>
+		<h2>Right to left and bi directional override</h2>
+		<h2 class="dirrection">Right to left and bi directional override</h2>
+	</div><br>
+
+	<div>
+		<h1>Text decoration</h1>
+		<h2 id="underline">Text decoration - underline</h2>
+		<h2 id="overline">Text decoration - overline</h2>
+		<h2 id="line-through">Text decoration - line-through</h2>
+	</div><br>
+
+	<div>
+		<h1>Text Transformation</h1>
+		<h2 class="lowercase">Text Transformation-lowercase</h2>
+		<h2 class="uppercase">Text Transformation-uppercase</h2>
+		<h2 class="capitalize">Text Transformation-capitalize</h2>
+	</div>
+
+	<div>
+		<h1>Text shaddow</h1>
+		<h2 class="shadow">Text Shadow</h2>
+	</div><br>
+
+	<div>
+		<h1>Text spacing</h1>
+		<h2 class="spacing">We take great pleasure in welcoming you to the Vavuniya Campus of the University of Jaffna!
+
+		Situated in the land that was once part of the kingdom of the legendary Vanni Kings, the Vavuniya Campus is a higher seat of learning and research in this region, which provides higher education in the fields of Applied Science , Business Management and Technological Studies
+
+		As a service provider in the higher education sector we are customer focused – where producing totally satisfied customers is the prime aim of all our endeavours.</h2>
+	</div>
+</body>
+</body>
+</html>

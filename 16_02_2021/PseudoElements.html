@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pseudo Elements Selectors</title>
+	<style type="text/css">
+		p.first-line::first-line{
+			color: blue;
+			font-weight: bold;
+		}
+		p.first-letter::first-letter{
+			color: red;
+			font-size: 50px;
+		}
+		p.before::before{
+			content: url(img.jpg);
+		}
+		p.after::after{
+			content: url(img.jpg);
+		}
+	</style>
+</head>
+<body>
+	<p>::First Line Pseudo Element - it styles first line of paragraph</p>
+
+	<p class="first-line">We take great pleasure in welcoming you to the Vavuniya Campus of the University of Jaffna!	Situated in the land that was once part of the kingdom of the legendary Vanni Kings, the Vavuniya Campus is a higher seat of learning and research in this region, which provides higher education in the fields of Applied Science , Business Management and Technological Studies	As a service provider in the higher education sector we are customer focused – where producing totally satisfied customers is the prime aim of all our endeavours.</p>
+
+	<p>::First Letter Pseudo Element - it styles first line of paragraph</p>
+
+	<p class="first-letter">We take great pleasure in welcoming you to the Vavuniya Campus of the University of Jaffna!	Situated in the land that was once part of the kingdom of the legendary Vanni Kings, the Vavuniya Campus is a higher seat of learning and research in this region, which provides higher education in the fields of Applied Science , Business Management and Technological Studies	As a service provider in the higher education sector we are customer focused – where producing totally satisfied customers is the prime aim of all our endeavours. </p>
+
+	<p>::before Pseudo Element - it styles first line of paragraph</p>
+
+	<p class="before">We take great pleasure in welcoming you to the Vavuniya Campus of the University of Jaffna!	Situated in the land that was once part of the kingdom of the legendary Vanni Kings, the Vavuniya Campus is a higher seat of learning and research in this region, which provides higher education in the fields of Applied Science , Business Management and Technological Studies	As a service provider in the higher education sector we are customer focused – where producing totally satisfied customers is the prime aim of all our endeavours. </p>
+
+	<p>::After Pseudo Element - it styles first line of paragraph</p>
+
+	<p class="after">We take great pleasure in welcoming you to the Vavuniya Campus of the University of Jaffna!	Situated in the land that was once part of the kingdom of the legendary Vanni Kings, the Vavuniya Campus is a higher seat of learning and research in this region, which provides higher education in the fields of Applied Science , Business Management and Technological Studies	As a service provider in the higher education sector we are customer focused – where producing totally satisfied customers is the prime aim of all our endeavours. </p>
+</body>
+</html>

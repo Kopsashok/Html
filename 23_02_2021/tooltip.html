@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tooltip</title>
+	<style type="text/css">
+		.tooltip{
+			position: relative;
+			display: inline-block;
+		}
+		.tooltip .tooltiptext{
+			visibility: hidden;
+			width: 150px;
+			background-color: blue;
+			color: white;
+			text-align: center;
+			border-radius: 5px;
+			padding: 10px;
+
+			position: absolute;
+			z-index: 1;
+		}
+		.tooltip:hover .tooltiptext{
+			visibility: visible;
+		}
+	</style>
+</head>
+<body>
+	<h1>Tooltips</h1>
+	<p>Move the mouse over me to see the msg</p>
+	<div class="tooltip">
+		<img src="images/js.png" alt="js">
+		<div class="tooltiptext">JavaScript</div>
+	</div>
+</body>
+</html>

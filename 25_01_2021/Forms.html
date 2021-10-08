@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<h`ead>
+	<title>Forms</title>
+</head>
+<body>
+	<form>
+	<fieldset>
+		<legend>Form elements</legend>
+		<label for="fname">First Name</label>
+		<input type="text" name="fname" id="fname">
+		<br><br>
+		<label>Select a Fruit</label>
+		<select id="fruits" name="fruits" size="4" multiple>
+			<option value="mango">Mango	</option>
+			<option value="apple">Apple	</option>
+			<option value="papaya">Papaya</option>
+			<option value="apple">Orange</option>
+			<option value="papaya">Grapes</option>
+		</select>
+		<br><br>
+		<!--Text area-->
+		<label style="text-align: center;">Add your feedback</label>
+		<textarea name="msg" rows="10" cols="10">Type your text Here</textarea><br><br>
+		<textarea name="fdbk" style="width: 50px; height: 50px;">Type your text Here</textarea>
+
+		
+		<br><br>
+		<label>select the browser</label>
+		<input list="browsers">
+		<datalist id="browsers">
+			<option value="firefox">firefox</option>
+			<option value="Safari">Safari</option>
+			<option value="Chrome">Chrome</option>
+		</datalist>
+
+		</fieldset>
+		<!--Button-->
+		<br><br>
+		<button type="button" onclick="alert('Already Submitted')">Submit</button>
+	</form>
+</body>
+</html>

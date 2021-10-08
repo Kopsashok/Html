@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Simple Selectors</title>
+	<style>
+		/*element selector*/
+		p{
+			color: red;
+		}
+
+		#para1{
+			color: blue;
+			text-align: center;
+		}
+
+		.class1{
+			text-align: center;
+			color: green;
+			border: 3px solid red;
+		}
+
+/*Universal selector - apply to entire document*/
+		*{
+			background-color: lightblue;
+			font-weight: bold;
+		}
+
+		h2,h3{
+			color: magenta;
+		}
+		
+	</style>
+</head>
+<body>
+<!--Element and ID selector-->
+	<p>This is my first para</p>
+	<p id="para1">This is to describe id selector</p>
+	<p>This is default</p>
+
+	<!--selector-->
+	<p class="class1">This is to describe class selector</p>
+
+	<!--Grouping selector-->
+	<h2>Hello World:)</h2>
+	<h3>Hi Sparrow!!</h3>
+</body>
+</html>

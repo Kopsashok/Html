@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Attribute Selector</title>
+	<style type="text/css">
+		a[target]{
+			color: red;
+		}
+		/*a[target="_blank"]{
+			background-color: yellow;
+		}
+		[class~="veg"]{
+			background-color: yellow;
+		}
+		[class |="name"]{
+			background-color: green;
+		}*/
+		[class ^="name"]{
+			background-color: red;
+		}
+		/*[class $="name"]{
+			background-color: blue;
+		}
+		[class *="st"]{
+			background-color: magenta;
+		}*/
+	</style>
+</head>
+<body>
+	<h1>Attribute Selector</h1>
+	<h2>Attribute Selector : [attribute] and [attribute="value"]</h2>
+
+	<a href="#" target="_blank">Google</a>
+	<a href="#">Yahoo</a>
+	<a href="#" target="_top">Yahoo</a>
+
+	<h2>Attribute Selector : [attribute ~="value"]</h2>
+	<p class="veg">Carrot</p>
+	<p class="fruit">Apple</p>
+	<p class="foods">Buns</p>
+
+	<h2>Attribute Selector : [attribute |="value"]</h2>
+	<p class="nameFirst">First Name</p>
+	<p class="lastName">Last Name</p>
+	<p class="name-full">Full Name</p>
+
+	<h2>Attribute Selector : [attribute ^="value"]</h2>
+	<p class="nameFirst">First Name</p>
+	<p class="last-Name">Last Name</p>
+	<p class="name-full">Full Name</p>
+
+	<h2>Attribute Selector : [attribute $="value"]</h2>
+	<p class="nameFirst">First Name</p>
+	<p class="last-Name">Last Name</p>
+	<p class="name-full">Full Name</p>
+
+	<h2>Attribute Selector : [attribute *="value"]</h2>
+	<p class="nameFirst">First Name</p>
+	<p class="last-Name">Last Name</p>
+	<p class="name-full">Full Name</p>
+</body>
+</html>

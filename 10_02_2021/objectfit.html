@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Object fit</title>
+	<style type="text/css">
+	.fill{
+		object-fit: fill;
+	}
+	.contain{
+		object-fit: contain;
+	}
+	.cover{
+		object-fit: cover;
+	}
+	.scale_down{
+		object-fit: scale-down;
+	}
+	.none{
+		object-fit: none;
+		/* take a part of img and fill the content*/
+	}
+	</style>
+</head>
+<body style="background: lightblue;">
+	<h1>Original Image</h1>
+	<img src="img.jpg" alt="Rose">
+
+	<h1>Resized Image</h1>
+	<img src="img.jpg" alt="Rose" width="300px" height="400px">
+
+	<h1>Object fit - fill</h1>
+	<img src="img.jpg" alt="Rose"  width="300px" height="400px" class="fill">
+
+	<h1>Object fit - contain</h1>
+	<img src="img.jpg" alt="Rose"  width="300px" height="400px" class="contain">
+
+	<h1>Object fit - cover</h1>
+	<img src="img.jpg" alt="Rose"  width="300px" height="400px" class="cover">
+
+	<h1>Object fit - scale down</h1>
+	<img src="img.jpg" alt="Rose"  width="300px" height="400px" class="scale_down">
+
+	<h1>Object fit - none</h1>
+	<img src="img.jpg" alt="Rose"  width="300px" height="400px" class="none">
+</body>
+</html>
